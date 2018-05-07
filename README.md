@@ -8,8 +8,6 @@ Since getting funded on Kickstarter requires meeting or exceeding the project's 
 
 ## Instructions
 
-![Kickstarter Table](Images/FullTable.PNG)
-
 * Using the Excel table provided, you will be modifying and analyzing the data of four thousand past Kickstarter projects as you attempt to uncover some of the market trends.
 
 * Use conditional formatting to fill each cell in the `state` column with a different color, depending on whether the associated campaign was "successful," "failed," "cancelled," or is currently "live".
@@ -22,13 +20,9 @@ Since getting funded on Kickstarter requires meeting or exceeding the project's 
 
 * Create two new columns, one called `category` at Q and another called `sub-category` at R, which use formulas to split the `Category and Sub-Category` column into two parts.
 
-  ![Category Stats](Images/CategoryStats.PNG)
-
   * Create a new sheet with a pivot table that will analyze your initial worksheet to count how many campaigns were "successful," "failed," "cancelled," or are currently "live" per **category**.
 
     * Create a stacked column pivot chart that can be filtered by `country` based on the table you have created.
-
-  ![Subcategory Stats](Images/SubcategoryStats.PNG)
 
   * Create a new sheet with a pivot table that will analyze your initial sheet to count how many campaigns were "successful," "failed," "cancelled," or are currently "live" per **sub-category**.
 
@@ -39,8 +33,6 @@ Since getting funded on Kickstarter requires meeting or exceeding the project's 
   * Create a new column named `Date Created Conversion` that will use [this formula](http://spreadsheetpage.com/index.php/tip/converting_unix_timestamps/) to convert the data contained within `launched_at` into Excel's Date format
 
   * Create a new column named `Date Ended Conversion` that will use [this formula](http://spreadsheetpage.com/index.php/tip/converting_unix_timestamps/) to convert the data contained within `deadline` into Excel's Date format
-
-  ![Outcomes Based on Launch Date](Images/LaunchDateOutcomes.PNG)
 
   * Create a new sheet with a pivot table with a column of `state`, rows of `Date Created Conversion`, values based on the count of `state`, and filters based on `parent category` and `Years`.
 
@@ -70,8 +62,6 @@ Since getting funded on Kickstarter requires meeting or exceeding the project's 
     * 40000 to 44999
     * 45000 to 49999
     * Greater than or equal to 50000
-
-    ![Goal Outcomes](Images/GoalOutcomes.PNG)
 
   * Using the `COUNTIFS()` formula, count how many successful, failed, and canceled projects were created with goals within those ranges listed above. Populate the `Number Successful`, `Number Failed`, and `Number Canceled` columns with this data.
 
